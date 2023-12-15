@@ -16,7 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         "first" => "Hello",
-        "second" => "World",
+        "second" => "Home Page",
     ];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/pages.about', function () {
+    $data = [
+        "first" => "Hello",
+        "second" => "About Page",
+    ];
+    return view('pages.about', $data);
+})->name('about');
+
+Route::get('/pages.another', function () {
+    $data = [
+        "first" => "Hello",
+        "second" => "Another Page",
+    ];
+    return view('pages.another', $data);
+})->name('another');
