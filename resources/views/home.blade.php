@@ -405,7 +405,7 @@
 </head>
 
 <body class="antialiased">
-    <h1>Hello world</h1>
+    <h1>{{$first . " " . $second}} </h1>
 </body>
 
 </html>
